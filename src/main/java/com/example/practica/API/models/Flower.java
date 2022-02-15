@@ -35,7 +35,8 @@ public class Flower {
     }
 
     public void setColor(String color){
-        this.color = color;
+        this.color = color
+        ;
     }
 
 
