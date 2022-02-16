@@ -39,8 +39,9 @@ public class FlowerController {
     }
 
     @PostMapping("search")
-    public List<Flower> buscarPalabra(@RequestParam("query") String query){
-        var flor = flowerService.buscarPorPalabra(query);
-        return flor;
+    public List<Flower> BuscarFlor(@RequestParam("query") String query){
+        var nombre = flowerService.Buscarporpalabra(query);
+        System.out.println(nombre);
+        return nombre;
     }
 }

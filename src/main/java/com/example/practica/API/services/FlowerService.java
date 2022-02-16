@@ -27,8 +27,8 @@ public class FlowerService {
         return FlowerRepo.findById(id);
     }
 
-    public List<Flower> buscarPorPalabra(String query){
-        List <Flower> flor = FlowerRepo.encontrarPorPalabra(query);
-        return flor;
+    public List<Flower> Buscarporpalabra(String query){
+        List<Flower> nombre= FlowerRepo.EncontrarPorPalabra(query);
+        return nombre;
     }
 }
